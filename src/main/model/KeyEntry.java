@@ -2,7 +2,7 @@
 package main.model;
 
 public class KeyEntry {
-
+    // Instance Variables
     private String name;
     private int hashValue;
     private PhysicalNode assignedPhysicalNode;

@@ -2,6 +2,7 @@
 package main.model;
 
 public class PhysicalNode {
+    // Instance Variables
     private String name;
     private String color;
     private int id;
