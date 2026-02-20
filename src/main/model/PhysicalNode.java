@@ -1,14 +1,16 @@
 // PhysicalNode.java class
 package main.model;
 
+import java.awt.Color;
+
 public class PhysicalNode {
     // Instance Variables
     private String name;
-    private String color;
+    private Color color;
     private int id;
 
     // Constructor
-    public PhysicalNode(String name, String color, int id) {
+    public PhysicalNode(String name, Color color, int id) {
         this.name = name;
         this.color = color;
         this.id = id;
@@ -19,7 +21,7 @@ public class PhysicalNode {
         return name;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
@@ -32,7 +34,7 @@ public class PhysicalNode {
         this.name = name;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

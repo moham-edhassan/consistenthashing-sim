@@ -4,11 +4,11 @@ package main.model;
 public class KeyEntry {
     // Instance Variables
     private String name;
-    private int hashValue;
+    private Long hashValue;
     private PhysicalNode assignedPhysicalNode;
 
     // Constructor
-    public KeyEntry(String name, int hashValue, PhysicalNode assignedPhysicalNode) {
+    public KeyEntry(String name, Long hashValue, PhysicalNode assignedPhysicalNode) {
         this.name = name;
         this.hashValue = hashValue;
         this.assignedPhysicalNode = assignedPhysicalNode;
@@ -19,7 +19,7 @@ public class KeyEntry {
         return this.name;
     }
 
-    public int getHashValue() {
+    public Long getHashValue() {
         return hashValue;
     }
 
@@ -32,7 +32,7 @@ public class KeyEntry {
         this.name = name;
     }
 
-    public void setHashValue(int hashValue) {
+    public void setHashValue(Long hashValue) {
         this.hashValue = hashValue;
     }
 

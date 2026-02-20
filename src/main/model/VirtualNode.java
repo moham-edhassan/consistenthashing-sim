@@ -4,11 +4,11 @@ package main.model;
 public class VirtualNode {
     // Instance Variables
     private int replicaIndex;
-    private int position;
+    private Long position;
     private PhysicalNode parentNode;
 
     // Constructor
-    public VirtualNode(int replicaIndex, int position, PhysicalNode parentNode) {
+    public VirtualNode(int replicaIndex, Long position, PhysicalNode parentNode) {
         this.replicaIndex = replicaIndex;
         this.position = position;
         this.parentNode = parentNode;
@@ -19,7 +19,7 @@ public class VirtualNode {
         return replicaIndex;
     }
 
-    public int getPosition() {
+    public Long getPosition() {
         return position;
     }
 
@@ -32,7 +32,7 @@ public class VirtualNode {
         this.replicaIndex = replicaIndex;
     }
 
-    public void setPosition(int position) {
+    public void setPosition(Long position) {
         this.position = position;
     }
 
