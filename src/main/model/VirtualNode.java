@@ -1,4 +1,11 @@
-//VirtualNode.java class
+/*
+VirtualNode.java class
+
+This class represents the virtual node data structure that is used to store the virtual nodes.
+
+@author: Mohamed Hassan
+@date: 2026-02-24
+*/
 package main.model;
 
 public class VirtualNode {

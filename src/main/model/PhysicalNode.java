@@ -1,4 +1,11 @@
-// PhysicalNode.java class
+/*
+PhysicalNode.java class
+
+This class represents the physical node data structure that is used to store the physical nodes.
+
+@author: Mohamed Hassan
+@date: 2026-02-24
+*/
 package main.model;
 
 import java.awt.Color;

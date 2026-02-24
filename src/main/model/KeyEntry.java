@@ -1,4 +1,11 @@
-//KeyEntry.java class
+/*
+KeyEntry.java class
+
+This class represents the key entry data structure that is used to store the keys and their assigned nodes.
+
+@author: Mohamed Hassan
+@date: 2026-02-24
+*/
 package main.model;
 
 public class KeyEntry {
