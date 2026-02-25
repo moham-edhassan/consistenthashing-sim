@@ -2,7 +2,6 @@
 RingPanel.java class
 
 This class represents the ring panel that is used to display the ring with its nodes and keys on it.
-Big thanks to 
 
 @author: Mohamed Hassan
 @date: 2026-02-25
