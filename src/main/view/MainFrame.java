@@ -26,8 +26,8 @@ public class MainFrame extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        ControlPanel controlPanel = new ControlPanel();
-        RingPanel ringPanel = new RingPanel();
+        controlPanel = new ControlPanel();
+        ringPanel = new RingPanel();
         //creating the main split pane
         JSplitPane mainSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT , controlPanel, ringPanel);
         //setting the divider location to 250
