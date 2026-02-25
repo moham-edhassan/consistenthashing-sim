@@ -52,7 +52,9 @@ public class SimController {
         //getting the name from the text field
         String name = controlPanel.getNodeNameField().getText();
         //checking if the name is empty
-        if (name.isEmpty()) return;
+        if (name.isEmpty()){
+            return;
+        }
 
         //getting the color for the node
         Color color = colors[nodeIdCounter % colors.length];
@@ -84,7 +86,13 @@ public class SimController {
     private void handleRemoveNode() {
         //getting the name from the nodes box
         String name = (String) controlPanel.getNodesBox().getSelectedItem();
-        if (name == null) return;
+        if (name == null){
+            return;
+        }
+        //checking if the hashing ring is empty
+        if(hashingRing.getNodes().isEmpty()){
+            return;
+        }
 
         //getting the target node
         PhysicalNode target = null;
@@ -99,7 +107,9 @@ public class SimController {
             }
         }
         //checking if the target node is null
-        if (target == null) return;
+        if (target == null){
+            return;
+        }
 
         //getting the number of virtual nodes from the slider
 
@@ -122,8 +132,13 @@ public class SimController {
         //getting the name from the text field
         String name = controlPanel.getKeyNameField().getText();
         //checking if the name is empty
-        if (name.isEmpty()) return;
-
+        if (name.isEmpty()){
+            return;
+        }
+        //checking if the hashing ring is empty
+        if(hashingRing.getNodes().isEmpty()){
+            return;
+        }
         //assigning a key to the hashing ring
         try {
             hashingRing.assignKey(name);
@@ -137,6 +152,10 @@ public class SimController {
 
     //handling the add random keys event
     private void handleAddRandomKeys() {
+        //checking if the hashing ring is empty
+        if(hashingRing.getNodes().isEmpty()){
+            return;
+        }
         //looping through 100 keys
         try {
             for (int i = 0; i < 100; i++) {
