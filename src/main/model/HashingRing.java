@@ -158,4 +158,15 @@ public class HashingRing {
         //returning the map of physical nodes and their number of keys
         return map;
     }
+
+    //getters
+    public List<PhysicalNode> getNodes() {
+        return node;
+    }
+    public List<KeyEntry> getKeyEntry() {
+        return keyEntry;
+    }
+    public List<VirtualNode> getVirtualNodes() {
+        return new ArrayList<>(ring.values());
+    }
 }
