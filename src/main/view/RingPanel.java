@@ -1,5 +1,6 @@
 package main.view;
 
-public class RingPanel {
+import javax.swing.JPanel;
+public class RingPanel extends JPanel {
     
 }
